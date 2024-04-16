@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <script>
+        // var n = "nishant"
+        // document.write(n,'<br>')
+        // var l ="karanjavkar"
+        // document.write(l,'<br>')
+
+
+        // var full_name 
+        // full_name ='Nishant Karanjavkar'
+        // document.write(full_name,'<br>')
+
+        // var first_name = 'Nishant' , last_name ='Karanjavkar'
+        // document.write("First Name:",first_name,'<br>')
+        // document.write('Last Name:',last_name,'<br><hr>')
+
+        // document.write(typeof(first_name),'<br>')
+        // document.write(typeof(last_name),'<br>')
+
+        // Arithmatic operators
+
+        // var x = 10
+        // var y = 20
+
+        // add = x + y
+        // document.write("sum: ",add,'<br>')
+
+        // sub = x - y
+        // document.write("sub: ",sub,'<br>')
+
+        // mul = x * y
+        // document.write('mul: ',mul,'<br>')
+
+        // div = x / y
+        // document.write('div: ',div,'<br>')
+
+        // mod =  x % y
+        // document.write('mod: ',mod,'<br>')
+
+        // prompt 
+
+        // var name = prompt('Enter a name:')
+        // document.write(name)
+         
+        // var name = prompt("Enter your name:",'Steve')
+        // document.write(name)
+
+
+
+        // conditional statement
+        // if statement
+
+        // let x = 10
+
+        // if (x>5) {
+        //     document.write(x,' is greater than 5')
+        // }
+
+        // document.write("<br><hr>")
+
+        // if (x>10) {
+        //     document.write(x,' is greater than 5')
+        // }
+
+        // else {
+        //     document.write('5 is greater')
+        // }
+
+        // document.write("<br><hr>");
+
+        // if (x>20) {
+        //     document.write('x is greater');
+        // }
+
+        // else if (x==10) {
+        //     document.write('x is equal to 10');
+        // }
+
+        // else {
+        //     document.write('else is executed');
+        // }
+
+        // let fruit = prompt("enter fruit: ")
+
+        // switch (fruit){
+        //     case 'banana':
+        //         document.write('Banana is yellow');
+        //         break;
+        //     case 'apple':
+        //         document.write('apple is red');
+        //         break;
+        //     case 'orange':
+        //         document.write('orange is orange');
+        //         break;        
+        // }
+
+        // for loop 
+
+        //  var i = 1
+        //  for (i;i<=5;i++) {
+        //     document.write(i,'<br>')
+        //  }
+
+        //  var j = 1;
+        //  for (;j<=5;j++) {
+        //     document.write(j,'<br><br>')
+        //  }
+
+        // while loop
+
+        // var i = 0
+        // while (i<=5) {
+        //     document.write(i,'<br>');
+        //     i++;
+        // }
+        
+
+        // do while
+
+        // var i = 1
+        // do {
+        //     document.write(i);
+        //     i++;
+        // } while(i<=5);
+
+
+        // global scope or global variable
+
+        // var x = 'globle variable'
+
+        // document.write(x," outside the function <br>")
+
+
+        // function print() {
+        //     document.write(x,' Inside the fuction')
+        // }
+        // print()
+
+        
+        // local scope or local variable
+
+        // function print(){
+        //     var x = "local variable"
+            
+        //     document.write(x,' inside the function')
+        // }
+        // print()
+        // document.write(x,' outside the function')
+
+       // lexical Scope
+       
+    //    function outer() {
+    //     var x = 'this x'
+    //     document.write(x,'<br>')
+        
+
+
+    //     function inner() {
+    //         var y = 'This y'
+    //         document.write(x,'<br>')
+    //         document.write(y,'<br>')
+    //     }
+    //     inner()
+    //     document.write(x,'<br>')
+    //     document.write(y,'<br>')
+    //    }
+    //    outer()
+
+    // if(true){
+    //         var i= 20;
+    //         document.write("inside function :"+i+" <br>"); 
+    //     }
+    
+    //     document.write("outside function :"+i);
+
+    //     document.write("<br>")
+
+        // if(true){
+        //         let j= 20
+        //         document.write("inside  let function :"+j+" <br>"); 
+        //     }
+        
+        //     document.write("outside  let function :"+j)
+
+
+        // array in js
+
+        // let fruits = ['apple','banana']
+        // fruits.push('orange')
+        // // document.write(fruits,'<br>')
+
+        // fruits.pop('banana')
+        // // document.write(fruits)
+
+        // // unshift method
+
+        // fruits.unshift('grapes','mango')
+        // document.write(fruits)
+
+        // // shift method
+
+        // let fruits = ['apple','banana']
+        // console.log(fruits)
+        // let frist_fruit = fruits.shift();
+        // console.log(frist_fruit)
+        // console.log(fruits)    
+
+        // concat()
+        
+        // let fruits1 = ['apple','banana']
+        // let fruits2 = ['grapes','mango']
+        // let allfruits = fruits1.concat(fruits2)
+        // console.log(allfruits)
+
+        let fr = ['apple', 'banana', 'orange', 'grape', 'kiwi'];
+        let slicedFruits = fr.slice(2);
+      
+        console.log(slicedFruits)
+       </script>
+       h1> Click Event</h1>
+       <button type="button" onclick="clik()"> ON click</button><br><br>
+   
+       <button type="button" ondblclick="clik()"> Double click</button><br><br>
+   
+       <button type="button" oncontextmenu="clik()"> On Right Click</button><br><br>
+   
+       <button type="button" onmousedown="clik()"> on mouse down</button><br><br>
+   
+       <button type="button" onmouseup="clik()"> mouse up</button><br><br>
+   
+       <button type="button" onmouseenter="clik()"> on mouse enter</button><br><br>
+       
+       <button type="button" onmouseleave="clik()"> on mouse leave</button><br><br>
+   
+       <button type="button" onmouseout="clik()"> on mouse out</button><br><br>
+   
+       <button type="button" onmousewheel="clik()"> mouse wheel</button><br><br>
+   
+</body>
+</html> 
