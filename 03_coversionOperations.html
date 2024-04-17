@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversions</title>
+</head>
+<body>
+    <script>
+        let score = 33
+        document.write(typeof(score))
+
+        let StringScore = String(score)
+        document.write(typeof(StringScore))
+
+        let marks = "33abc"
+        document.write(typeof(marks))
+
+        let valueNumber = Number(marks)
+        document.write(typeof(valueNumber))
+        document.write(valueNumber)             // NaN  => Not a Number
+
+
+        let x = null
+        document.write(typeof(x))       // null => object
+
+        let x_to_num = Number(x)
+        document.write(typeof(x_to_num))        // number
+
+        document.write(x_to_num)    // 0
+
+        let y = undefined
+        document.write(typeof(undefined)) //undefined
+
+        let y_to_number = Number(y)
+        document.write(typeof(y_to_number)) // number
+
+        document.write(y_to_number) // NaN
+
+
+        let name ="Nishant"
+        let num_name = Number(name)
+        document.write(typeof(num_name)) //number
+
+        document.write(num_name) //NaN
+
+        let bool = true
+        let bool_num = Number(bool) // number
+        document.write(bool_num)    // 1
+
+
+        // 33 => "33"
+        // "33abc" => NaN
+        // true => 1; false => 0
+
+
+        let isLoggedIn = ""
+        let booleanLoggedIn = Boolean(isLoggedIn)
+        document.write(typeof(booleanLoggedIn)) //boolean
+
+        document.write(booleanLoggedIn) // false
+
+        // 1 => true; 0 => false
+        // "" => false
+        // "Nishant" => true
+
+    </script>
+</body>
+</html>
