@@ -57,6 +57,38 @@
         }
         myFunction()
         console.log(typeof(myFunction)) //function  
+
+        console.log(typeof(Object))  // function
+        console.log(typeof(Function))
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // Stack (Primitive) , Heap (Non-Primitive)
+
+        // value is not changing in original data because it give copy of original data
+        let myName ="Nishant"
+        let anotherName = myName
+
+        anotherName = "Manish"
+
+        console.log(myName)
+        console.log(anotherName)
+
+        // Non-Primitive or Reference , value is changing in original data
+
+        let UserOne = {
+            email : "userone@gmail.com",
+            upi : 'user@ybl'
+        }
+
+        let UserTwo = UserOne
+
+        UserTwo.email = "nishant@gmail.com"
+        console.log(UserTwo)
+        console.log(UserOne)
+
+
     </script>
 </body>
 </html>
