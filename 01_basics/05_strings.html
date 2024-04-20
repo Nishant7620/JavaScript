@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+<body>
+    <script>
+
+        const myName = "Nishant"
+        const age = 22
+
+        console.log(myName)
+        console.log(age)
+
+       // string concatination
+       
+       console.log(myName + age + "is old")     // this is old way to concatinate string 
+                                                 // which is not recommended   
+
+       // string interpolation
+       
+       console.log(`My name is ${myName} and i my age is ${age}`)   // this is new way to concatinate string
+                                                                    // which is recommended
+
+       
+                                                                    
+      // another way to delcare string 
+      
+      const fullName = new String("Nishantk")       // by using new keyword we are able to used 
+      console.log(fullName)                        // object of javascript
+
+
+    // some methods of string:
+    
+    console.log(fullName[0])    // finding charater using index-value
+
+    console.log(fullName.__proto__) // will get o/p as object {}
+
+    console.log(fullName.indexOf('t')) // gives index value
+
+    console.log(fullName.length)    // gives length of string
+    
+
+    console.log(fullName.toUpperCase())
+    console.log(fullName.charAt(0))      // at which index which charater is present
+    console.log(fullName.indexOf('t'))  // this charater comming on which index
+
+    // slicing of string
+
+    const newString = fullName.substring(0,4)  // here in substring you cannot give negative values
+    console.log(newString)                      // if you use negative values here it will automatically start with 0
+
+   const anotherString = fullName.slice(-6,5) // here you can give negative values
+   console.log(anotherString) 
+
+
+   const newStringone = "   Nishant   "
+   console.log(newStringone)
+   console.log(newStringone.trim())
+
+   const url = "https://nishant.com/nishant%20karanjavkar"
+
+   console.log(url.replace('%20',"-"))      // it will replace(old,new) old to new
+
+   console.log(url.includes('nishant'))  // it will check substring is present or not in string
+   
+   const newStringtwo = "nishant-k-com"
+
+   console.log(newStringtwo.split('-'))
+
+    </script>
+</body>
+</html>
