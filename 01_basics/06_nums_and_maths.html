@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const score = 400
+        console.log(score)
+
+        const balance = new Number(100)
+        console.log(balance)
+
+       console.log(balance.toString())
+       console.log(balance.toString().length)
+
+      console.log(balance.toFixed(2))
+
+        const standards = 1000000
+
+        console.log(standards.toLocaleString())
+        console.log(standards.toLocaleString('en-IN')) // in Indian standard
+       
+       const otherNumber = 123.8966
+       console.log(otherNumber.toPrecision(4))  
+       
+       
+       //++++++++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++++++++++++++++++++
+
+       console.log(Math)
+
+       console.log(Math.abs(-4)) // 4
+       console.log(Math.round(4.6)) // 5
+       console.log(Math.ceil(4.2)) // ceil will give max nearest value  i.e 5
+       console.log(Math.floor(4.9)) // floor will give min nearest value i.e 4
+       console.log(Math.min(2,5,1,6,7)) // minimum value
+       console.log(Math.max(1,4,6,3,7,8)) // maximum value
+
+       console.log(Math.random()) // provide random value between 0 and 1 (0 or 1 may be inclusive)
+
+       console.log(Math.random()* 10) // it will shift value to left like 1.435, 0.2432, 4.21423
+
+       console.log((Math.random()*10) +1) // now by adding 1 it will avoid 0.3244 so at first place zero is not going to come
+       console.log(Math.floor(Math.random()*10) +1)  // floor will give min value after round off
+
+
+       const min = 10
+       const max = 20
+
+       console.log(Math.floor(Math.random() * (max-min + 1))+ min)   // we are adding min because we need minimum 10 value
+
+    </script>
+</body>
+</html>
