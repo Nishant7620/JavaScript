@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myDate = new Date()
+        console.log(myDate.toDateString())
+        console.log(myDate.toLocaleString())
+        console.log(myDate.getDate())
+
+        console.log(typeof (myDate))
+
+
+        const myCreatedDate = new Date(2024,0,24)   // Months are staring from 0 in js
+        console.log(myCreatedDate.toDateString())
+
+        const  newDateWithTime = new Date(2024,0,24 ,5,3)   //with time
+        console.log(newDateWithTime.toLocaleString())
+
+        const newDateFormat = new Date("2024-01-24") //format
+        console.log(newDateFormat.toDateString())
+
+        const newFormat = new Date("01-01-2024")
+        console.log(newFormat.toDateString())
+
+        let TimeStamp = Date.now()
+        console.log(TimeStamp)
+
+        console.log(newDateFormat.getTime())  // because Date is object 
+
+        console.log(Date.now()/1000) // it will give answer in decimal 
+        console.log(Math.floor(Date.now()/1000)) // converting milisecond to second
+
+
+        let NewDate =  new Date()
+
+        console.log(NewDate.getDate())
+        console.log(NewDate.getDay())
+        console.log(NewDate.getMonth() + 1)
+
+        NewDate.toLocaleString('default',{          // Costomised as you can
+            weekday :"long"
+        })
+    </script>
+</body>
+</html>
