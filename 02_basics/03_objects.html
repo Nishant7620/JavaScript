@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        //object literals
+        // Object.create      this will create singleton
+
+         // Adding Symbol to object
+        const mySym =Symbol("mykey1")
+
+        const User1 = {                 //this will not create singleton
+            name:"Nishant",
+            "FullName" :"NKaranjavkar",
+            age:18,
+            city:"Panvel",
+            isLoggedIn: false,
+            LoggedIn_at: ["Monday","Saturday"],
+            [mySym] : "mykey1"
+        }
+
+        console.log(User1.name)
+        console.log(User1["city"])      //this another way
+        console.log(User1["FullName"])
+
+        console.log(User1[mySym])
+
+    // changing value in object
+    
+    User1.city ="Navi-Mumbai"
+    console.log(User1)
+
+    // freezing object 
+
+    // Object.freeze(User1)
+    User1.city ="Kharghar"   //not going to change
+
+    //using function in object
+    
+    User1.greeting = function() {
+        console.log(`Hello User ${this.name}`)
+    }
+
+    console.log(User1.greeting())
+    </script>
+</body>
+</html>
