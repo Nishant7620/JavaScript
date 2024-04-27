@@ -81,6 +81,60 @@
        //hasOwnProperty
 
        console.log(tinderUser2.hasOwnProperty('name'))  // gives o/p in boolean
+
+
+       //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+       // Destruturing of Object
+
+
+       const course = {
+        cousename : "JavaScript",
+        price : 999,
+        courseInstructor:"Nishant"
+       }
+
+       console.log(course.courseInstructor)
+
+       //another way
+
+       const {courseInstructor} = course
+       console.log(courseInstructor)
+
+       //another way
+
+       const {courseInstructor:Instructor} = course
+       console.log(Instructor)
+
+       // in React how destructing used
+
+    //    const navbar = (props.company)=> {
+
+    //    }
+    //    navbar(company = "Nishant")
+
+
+    // const navbar ({company})=>{
+
+    // }
+    // navbar(company = "Nishant")
+
+    // JSON Format in API
+
+    // {
+    //     "coursename" : "Js",
+    //     "price" : "free",
+    //     "Instructor" : "Nishant"
+    // }
+
+    // API in Array
+    
+    [
+        {},
+        {},
+        {}
+    ]
+    
  </script>
 </body>
 </html>
