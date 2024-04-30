@@ -65,7 +65,57 @@
         }
         console.log(loginUser())
 
+        //###########################################################################
 
+        function calculateCartPrice(num1) {
+            return num1
+        }
+
+        console.log(calculateCartPrice(200))
+
+
+        // rest operator 
+        
+        function calculateCartPrice(...num1) {
+            return num1
+        }
+
+        console.log(calculateCartPrice(200,300,400))   // gives output as array
+
+        //--------------------------------
+
+        function calculateCartPrice(val1,val2,...num1) {
+            return num1
+        }
+        console.log(calculateCartPrice(200,300,400,500))  //  in array [400,500]
+
+        // object passing through function
+
+        const user = {
+            username : "Nishant",
+            price: 999
+        }
+
+        function handleuser(anyuser) {
+            console.log(`username is  ${anyuser.username} and price is ${anyuser.price}`)
+        }
+        // handleuser(user)
+        // another way
+        handleuser({
+            username: 'Sam',
+            price: 399
+        })
+
+        // passing Array through function
+
+        const newArray = [200,300,400,500]
+
+        function arraySecondValue (getArray) {
+            return getArray[1]
+        }
+
+       // console.log(arraySecondValue(newArray))
+        console.log(arraySecondValue([200,300,400,500]))
 
     </script>
 </body>
