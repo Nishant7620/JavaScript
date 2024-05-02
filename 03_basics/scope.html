@@ -24,9 +24,49 @@
         }
 
         console.log(a)      // here var a is accessing outside the scope
-        console.log(b)      // while let and const are not allowing to access outside the scope
-        console.log(c)
+        // console.log(b)      // while let and const are not allowing to access outside the scope
+        // console.log(c)
+    
+        
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+        function one()  {
+            const username = "Nishant"
+            function two() {
+                const website = "youtube"
+                console.log(username)
+            }
+            // console.log(website)
+            two() 
+        }
+        one()
+
+
+        if (true) {
+            const username = "nishant"
+            if(username === "nishant"){
+                const website = " youtube"
+                console.log(username + website)
+            }
+            // console.log(website)
+
+        }
+        // console.log(username)
+
+
+        //+++++++++++++++++++++++++++ interesting Concept +++++++++++++++++++++++++++++++++++++++++
+        console.log(addone(5))
+        function addone(n) {
+            return n + 5
+        } 
+        // addone(5)
+
+
+        // console.log(addtwo(4))   // it will not allow declare like this
+        const addtwo = function(num) {
+            return num + 5
+        }
+        console.log(addtwo(4))
     </script>
 </body>
 </html>
