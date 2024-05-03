@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This and Arrow function</title>
+</head>
+<body>
+    <script>
+        const user = {
+            username : "Nishant",
+            price : 999,
+            welcomeMessage : function() {
+                console.log(`${this.username} welcome to website`)  // referering current context using 'this' keyword
+            }
+        }
+        user.welcomeMessage() 
+        user.username = "Sam" // changing object property
+        user.welcomeMessage() 
+
+        // using 'this' keyword in functions
+
+        function demo() {
+            let username = "nishant"
+            console.log(this.username) //undefined   // so here 'this' keyword is not working with function
+            console.log(this)   // gives output Window object
+        }
+        demo()
+
+        // Arrow function
+
+        const demo_function = () => {
+            let username = 'nishant'
+            console.log(this.username)  // undefined
+            console.log(this)     // gives window function
+        }
+        demo_function()
+
+        // basic syntax of arrow function
+
+        const addTwo = (num1,num2) => {
+            return num1 + num2
+        }
+        console.log(addTwo(5,3))
+
+        //Implict Return
+
+        const Two = (num1,num2) => num1 + num2
+        console.log(Two(5,3))
+
+        //another way
+
+        const one = (num1,num2) => (num1 + num2)
+        console.log(one(5,2))
+
+        // returning object
+
+        const Obj = () => ({username:'Nishant'})     // parenthesis are used
+        console.log(Obj())
+    </script>
+</body>
+</html>
