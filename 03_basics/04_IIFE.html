@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediately Invoke Function</title>
+</head>
+<body>
+    <script>
+        // function one() {
+        //     console.log('DB CONNECTED')      // normal function
+        // }
+        // one()
+
+
+        //------------------IIFE----------------------------------------
+
+        (function one() {
+            console.log('DB CONNECTION')   // name IIFE
+        }) ();
+
+        (()=>{
+            console.log('DB TWO')   // arrow function or unname IIFE
+        })();
+
+        ((name)=> {
+            console.log(`Name is: ${name}`)  // passing parameter
+        })('Nishant')
+
+
+        // there may be problem due to global scope variable to avoid
+        // that we are using Immediate Invoke Function
+
+        // To avoid global scope variable pollution we use IIFE
+
+    </script>
+</body>
+</html>
