@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array method</title>
+</head>
+<body>
+    <script>
+        // array methods
+
+        //======================== push()==================================================
+
+        let my_array = [1,2,4,5,6,7,8];
+        my_array.push(9);
+        console.log(my_array);
+
+        //======================= pop()===================================================
+
+        let m_array = [1,2,3,4,5];
+        m_array.pop();
+        console.log(m_array);
+
+        //======================== shift() ==============================================
+
+        let fruits = ['mango','apple','banana'];
+
+        fruits.shift();      //remove first element from array
+        console.log(fruits);
+
+        fruits.unshift('watermelon'); // add new element at first position
+        console.log(fruits);
+
+        //=========================== indexof() ===========================================
+
+        let students = ['Nishant','manish','Sahil'];
+
+        console.log(students.indexOf('Nishant'));
+        console.log(students.indexOf('Akash'));    // returns -1   if not present
+
+        //========================= slice() ===========================================
+
+        let f = ['apple','banana','cherry'];
+        let citrus = f.slice(1,2);
+        console.log(citrus);       // Returns a shallow copy of a portion of an array into a new array object.
+
+        // ========================= splice() ===========================================
+
+        let stu = ['Nishant','Manish','Sahil'];
+        stu.splice(2,2,'Akash');
+        console.log(stu);
+    </script>
+</body>
+</html>
