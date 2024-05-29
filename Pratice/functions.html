@@ -62,8 +62,21 @@
             console.log('outer function');
         }
         x();
-        
-        
+
+        //=====================================================================================
+
+        // higher order function
+
+        function greet(name,callback){
+            console.log('Hello,'+ name + '!');
+            callback();    
+        }
+
+        function aftergreeting(){
+            console.log('nice to meet you')
+        }
+
+        greet('Nishant',aftergreeting);
     
        
 
