@@ -52,8 +52,17 @@
 
         //===================================================================================
 
-        //higher order function 
+        //nested function 
 
+        let x = function outer(){
+            function inner(){
+                console.log('inner function');
+            }
+            inner();
+            console.log('outer function');
+        }
+        x();
+        
         
     
        
