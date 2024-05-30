@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <script>
+        // var name = 'Nishant';
+        // function func(){
+        //     name = 'Manish';
+        //     console.log(name);
+        // }
+        // func();
+        // console.log(name);
+
+        // let name = 'Nishant';
+        // function my_name(){
+        //     name = 'Manish';
+        //     console.log(name);
+        // }
+        // my_name();
+        // console.log(name);
+
+        const name = 'Nishant';
+        function my_name(){
+            name = 'Manish';
+            console.log(name);
+        }
+        console.log(name);
+
+        var a = 40;
+        let b = 30;
+        const c = 50;
+
+        // if(true){
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+
+        if (true){
+            var a = 10;
+            let b = 20;
+            const c = 40;
+        }
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        
+        
+
+
+
+    </script>
+</body>
+</html>
